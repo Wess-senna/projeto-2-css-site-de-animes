@@ -1,0 +1,112 @@
+/* 🔹 Banner */
+.banner {
+  background: url('../img/banner.jpg') center/cover no-repeat;
+  text-align: center;
+  color: var(--color-light);
+  padding: var(--sp-6) var(--sp-2);
+}
+
+.banner h1 {
+  font-size: var(--text-xxl);
+  margin-bottom: var(--sp-2);
+}
+
+.banner p {
+  font-size: var(--text-md);
+  margin-bottom: var(--sp-3);
+}
+
+/* 🔹 Botões */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: var(--sp-2) var(--sp-3);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-hover);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-hover);
+}
+
+/* 🔹 Cards de animes */
+.anime-destaques {
+  padding: var(--sp-4);
+  text-align: center;
+}
+
+.anime-destaques h2 {
+  margin-bottom: var(--sp-4);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-3);
+}
+
+.card {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-gray);
+  border-radius: 8px;
+  padding: var(--sp-2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: var(--sp-2);
+}
+
+.card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--sp-1);
+}
+
+.card p {
+  font-size: var(--text-sm);
+  margin-bottom: var(--sp-2);
+}
+/* Formulário de contato */
+.contato-container {
+  max-width: 600px;
+  margin: auto;
+  padding: var(--sp-4);
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.form-contato input, 
+.form-contato textarea {
+  padding: var(--sp-2);
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  font-family: var(--font-main);
+}
+
+/* Página Sobre */
+.sobre-container {
+  max-width: 800px;
+  margin: auto;
+  padding: var(--sp-4);
+  line-height: 1.6;
+}

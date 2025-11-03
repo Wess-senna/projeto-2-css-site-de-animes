@@ -1,0 +1,52 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+/* Header */
+.header {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: var(--text-xl);
+  font-weight: bold;
+}
+
+/* Menu Desktop */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.menu a {
+  color: var(--color-light);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background-color: var(--color-hover);
+}
+
+/* Dropdown */
+.dropdown

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | AnimeVerse</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Animes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">🔥 AnimeVerse</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="animes.html">Animes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main class="contato-container">
+        <h1>Fale Conosco</h1>
+        <p>Tem sugestões, críticas ou quer colaborar com o site? Envie sua mensagem!</p>
+
+        <form class="form-contato">
+            <label>Nome Completo</label>
+            <input type="text" required placeholder="Digite seu nome">
+
+            <label>E-mail</label>
+            <input type="email" required placeholder="exemplo@email.com">
+
+            <label>Assunto</label>
+            <input type="text" required placeholder="Assunto da mensagem">
+
+            <label>Mensagem</label>
+            <textarea rows="5" required placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 AnimeVerse | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
