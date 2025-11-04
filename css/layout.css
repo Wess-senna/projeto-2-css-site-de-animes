@@ -49,17 +49,13 @@ header .container {
     text-decoration: none;
 }
 
-/* components.css */
-
-/* Logo do site */
 .logo-img {
     width: 40px;
     height: auto;
-    background-color: var(--color-dark); /* mesma cor do header */
+    background-color: var(--color-dark);
     border-radius: 5px;
     padding: 5px;
 }
-
 
 /* Menu */
 nav ul {
