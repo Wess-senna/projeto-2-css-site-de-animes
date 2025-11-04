@@ -1,4 +1,4 @@
-/* Reset básico para remover margens, espaçamentos e padronizações dos navegadores */
+/* Reset CSS para remover estilos padrão dos navegadores */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,6 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul, ol {
@@ -24,9 +23,8 @@ img {
     display: block;
 }
 
-button, input, textarea {
+button, input, textarea, select {
     font-family: inherit;
     border: none;
     outline: none;
-    background: none;
 }

@@ -1,33 +1,26 @@
+/* Cores */
 :root {
-  /* 🎨 Paleta de Cores */
-  --color-primary: #ff3d3d;    /* vermelho anime */
-  --color-secondary: #1e90ff;  /* azul One Piece */
-  --color-dark: #0f0f0f;
-  --color-light: #f5f5f5;
-  --color-gray: #d1d1d1;
-  --color-success: #4caf50;
-  --color-warning: #ff9800;
-  --color-danger: #e63946;
+    --color-primary: #ff4500;
+    --color-secondary: #ffa500;
+    --color-dark: #1a1a1a;
+    --color-dark2: #111111;
+    --color-light: #f5f5f5;
+    --color-gray: #999999;
+    --color-success: #4caf50;
+    --color-error: #f44336;
 
-  /* 🖋 Tipografia */
-  --font-title: 'Poppins', sans-serif;
-  --font-body: 'Roboto', sans-serif;
-  --font-size-xl: 2.5rem;
-  --font-size-lg: 1.8rem;
-  --font-size-md: 1.2rem;
-  --font-size-sm: 1rem;
-  --font-size-xs: 0.8rem;
+    /* Tipografia */
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 20px;
+    --font-xl: 32px;
 
-  /* 📏 Espaçamentos (sistema 8px) */
-  --space-8: 8px;
-  --space-16: 16px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-48: 48px;
-  --space-64: 64px;
-
-  /* 🛑 Border Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+    /* Espaçamentos (modular) */
+    --sp-1: 8px;
+    --sp-2: 16px;
+    --sp-3: 24px;
+    --sp-4: 32px;
+    --sp-5: 48px;
+    --sp-6: 64px;
 }

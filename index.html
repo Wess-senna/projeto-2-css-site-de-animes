@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 2 - Site de Animes</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo dos Animes</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
 </head>
 <body>
 
-    <!-- HEADER + MENU -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">🌟 AnimeVerse</a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="animes.html">Animes</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            
+             Mundo dos Animes
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li>
+                    <a href="#">Animes ▼</a>
+                    <ul>
+                        <li><a href="onepiece.html">One Piece</a></li>
+                        <li><a href="naruto.html">Naruto</a></li>
+                        <li><a href="kimetsu.html">Kimetsu</a></li>
+                        <li><a href="fullmetal.html">Fullmetal</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+</header>
 
-            <!-- Menu Mobile -->
-            <button class="menu-toggle" id="menu-toggle">
-                ☰
-            </button>
+<section class="hero">
+    <div class="container">
+        <h1>Bem-vindo ao Mundo dos Animes</h1>
+        <p>Explore os melhores animes com informações, imagens e detalhes de cada série.</p>
+    </div>
+</section>
+
+<main class="container">
+    <div class="cards">
+        <!-- One Piece -->
+        <div class="card">
+            <img src="img/onepiece.jpg" alt="One Piece">
+            <h3>One Piece</h3>
+            <div class="tag">Ação</div>
+            <div class="tag">Aventura</div>
+            <a href="onepiece.html" class="btn">Ver Mais</a>
         </div>
-    </header>
 
-    <!-- BANNER PRINCIPAL -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Bem-vindo ao AnimeVerse</h1>
-            <p>Explorando o universo de One Piece, Naruto, Kimetsu no Yaiba e Fullmetal Alchemist!</p>
-            <a href="animes.html" class="btn">Ver Animes</a>
+        <!-- Naruto -->
+        <div class="card">
+            <img src="img/naruto.jpg" alt="Naruto">
+            <h3>Naruto</h3>
+            <div class="tag">Ação</div>
+            <div class="tag">Shounen</div>
+            <a href="naruto.html" class="btn">Ver Mais</a>
         </div>
-    </section>
 
-    <!-- SEÇÃO DE DESTAQUES -->
-    <section class="destaques container">
-        <h2>Animes em Destaque</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="img/onepiece.jpg" alt="One Piece">
-                <h3>One Piece</h3>
-                <p>A jornada de Luffy em busca do maior tesouro do mundo!</p>
-            </div>
-            <div class="card">
-                <img src="img/naruto.jpg" alt="Naruto">
-                <h3>Naruto</h3>
-                <p>A história de um ninja rejeitado que sonha em ser Hokage!</p>
-            </div>
-            <div class="card">
-                <img src="img/kimetsu.jpg" alt="Kimetsu no Yaiba">
-                <h3>Kimetsu no Yaiba</h3>
-                <p>Tanjiro luta contra demônios para salvar sua irmã Nezuko.</p>
-            </div>
-            <div class="card">
-                <img src="img/fullmetal.jpg" alt="Fullmetal Alchemist">
-                <h3>Fullmetal Alchemist</h3>
-                <p>Dois irmãos alquimistas em busca da Pedra Filosofal.</p>
-            </div>
+        <!-- Kimetsu no Yaiba -->
+        <div class="card">
+            <img src="img/kimetsu.jpg" alt="Kimetsu no Yaiba">
+            <h3>Kimetsu no Yaiba</h3>
+            <div class="tag">Ação</div>
+            <div class="tag">Fantasia</div>
+            <a href="kimetsu.html" class="btn">Ver Mais</a>
         </div>
-    </section>
 
-    <!-- RODAPÉ -->
-    <footer class="footer">
-        <p>© 2024 AnimeVerse | Projeto acadêmico - CSS e HTML</p>
-    </footer>
+        <!-- Fullmetal Alchemist -->
+        <div class="card">
+            <img src="img/fullmetal.jpg" alt="Fullmetal Alchemist">
+            <h3>Fullmetal Alchemist</h3>
+            <div class="tag">Ação</div>
+            <div class="tag">Aventura</div>
+            <a href="fullmetal.html" class="btn">Ver Mais</a>
+        </div>
+    </div>
+</main>
 
-    <script src="js/script.js"></script>
+<footer>
+    <p>© 2025 Mundo dos Animes - Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/menu.js"></script>
 </body>
 </html>

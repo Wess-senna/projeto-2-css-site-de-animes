@@ -1,112 +1,69 @@
-/* 🔹 Banner */
-.banner {
-  background: url('../img/banner.jpg') center/cover no-repeat;
-  text-align: center;
-  color: var(--color-light);
-  padding: var(--sp-6) var(--sp-2);
+@import url('variables.css');
+
+/* ====== CONTAINER DE CARDS (ANIMES) ====== */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--sp-4);
+    margin-top: var(--sp-4);
 }
 
-.banner h1 {
-  font-size: var(--text-xxl);
-  margin-bottom: var(--sp-2);
+/* Para telas médias (tablets, notebook pequeno) */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.banner p {
-  font-size: var(--text-md);
-  margin-bottom: var(--sp-3);
+/* Para celulares grandes */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* 🔹 Botões */
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  padding: var(--sp-2) var(--sp-3);
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
+/* Para celulares pequenos */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-.btn-primary {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-hover);
-}
-
-.btn-secondary {
-  background-color: var(--color-secondary);
-  color: white;
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-hover);
-}
-
-/* 🔹 Cards de animes */
-.anime-destaques {
-  padding: var(--sp-4);
-  text-align: center;
-}
-
-.anime-destaques h2 {
-  margin-bottom: var(--sp-4);
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--sp-3);
-}
-
+/* ====== CARD ====== */
 .card {
-  background-color: var(--color-light);
-  border: 1px solid var(--color-gray);
-  border-radius: 8px;
-  padding: var(--sp-2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-dark-light);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-light);
+    transition: 0.3s;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: var(--sp-2);
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
 .card h3 {
-  font-size: var(--text-lg);
-  margin-bottom: var(--sp-1);
+    padding: var(--sp-2);
+    color: var(--color-primary);
+    font-size: var(--font-md);
 }
 
-.card p {
-  font-size: var(--text-sm);
-  margin-bottom: var(--sp-2);
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--color-primary);
 }
-/* Formulário de contato */
-.contato-container {
-  max-width: 600px;
-  margin: auto;
-  padding: var(--sp-4);
+/* components.css */
+
+/* Logo do site */
+.logo-img {
+    width: 40px;
+    height: auto;
+    background-color: var(--color-dark); /* mesma cor do header */
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
-}
-
-.form-contato input, 
-.form-contato textarea {
-  padding: var(--sp-2);
-  border: 1px solid var(--color-gray);
-  border-radius: 5px;
-  font-family: var(--font-main);
-}
-
-/* Página Sobre */
-.sobre-container {
-  max-width: 800px;
-  margin: auto;
-  padding: var(--sp-4);
-  line-height: 1.6;
-}

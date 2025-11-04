@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre | AnimeVerse</title>
+    <title>Sobre - Mundo dos Animes</title>
+
+    <!-- Fonte e CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Animes</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">🔥 AnimeVerse</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="animes.html">Animes</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <!-- HEADER PADRÃO -->
+    <header>
+        <div class="container">
+            <div class="logo"> Mundo dos Animes</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html" class="ativo">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
     </header>
 
-    <main class="sobre-container">
-        <h1>Sobre o AnimeVerse</h1>
-        <p>O AnimeVerse é um site feito para fãs de animes e cultura geek. Aqui reunimos informações, curiosidades e tributos aos maiores animes da história. Nosso objetivo é proporcionar uma experiência visual agradável e conteúdos que conectem os fãs.</p>
+    <!-- CONTEÚDO -->
+    <main class="container" style="padding: 40px 0;">
+        <h1>Sobre o Site</h1>
+        <p>O <strong>Mundo dos Animes</strong> é um projeto desenvolvido para celebrar os principais animes que marcaram gerações, como One Piece, Naruto, Kimetsu no Yaiba e Fullmetal Alchemist.</p>
+        <p>A proposta é apresentar informações, curiosidades e homenagear personagens e histórias que inspiram fãs ao redor do mundo.</p>
 
-        <h2>📌 Animes em destaque</h2>
+        <h2>🎯 Objetivos</h2>
+        <ul>
+            <li>Unir fãs da cultura otaku e geek;</li>
+            <li>Compartilhar informações de forma simples e visual;</li>
+            <li>Servir como projeto acadêmico para aprendizado de Front-End.</li>
+        </ul>
 
-        <h3>One Piece</h3>
-        <p>One Piece, criado por Eiichiro Oda, conta a história de Monkey D. Luffy e sua tripulação dos Chapéus de Palha. Eles viajam pelos mares em busca do maior tesouro do mundo, o “One Piece”, para que Luffy se torne o Rei dos Piratas.</p>
-
-        <h3>Naruto</h3>
-        <p>Escrito por Masashi Kishimoto, Naruto acompanha a jornada de Naruto Uzumaki, um jovem ninja que sonha em se tornar Hokage, o líder de sua vila. A obra explora amizade, superação e redenção, tornando-se um dos animes mais influentes da história.</p>
-
-        <h3>Kimetsu no Yaiba (Demon Slayer)</h3>
-        <p>Kimetsu no Yaiba, de Koyoharu Gotouge, segue Tanjiro Kamado, que tem sua família massacrada por demônios, restando apenas sua irmã Nezuko, transformada em oni. Determinado, ele entra para a Corporação de Caçadores de Demônios.</p>
-
-        <h3>Fullmetal Alchemist</h3>
-        <p>Criado por Hiromu Arakawa, Fullmetal Alchemist apresenta os irmãos Edward e Alphonse Elric, que usam alquimia para tentar ressuscitar a mãe, mas pagam um preço alto. Em busca da Pedra Filosofal, enfrentam questões filosóficas e morais profundas.</p>
+        <h2>🛠 Tecnologias usadas</h2>
+        <ul>
+            <li>HTML5 (estrutura)</li>
+            <li>CSS3 (estilo, grid, responsividade)</li>
+            <li>JavaScript (menu responsivo)</li>
+        </ul>
     </main>
 
-    <footer class="footer">
-        <p>© 2025 AnimeVerse | Criado por fãs para fãs.</p>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Mundo dos Animes • Desenvolvido para fins educacionais</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
